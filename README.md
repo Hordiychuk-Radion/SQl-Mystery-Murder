@@ -5,6 +5,7 @@
 
 select * from crime_scene_report
 
+
 WHERE date = 20180115 AND type = 'murder' AND city = 'SQL City'
 
 ![1 step](https://github.com/Hordiychuk-Radion/SQl-Mystery-Murder/assets/139583782/160b0898-92a2-4a03-98ad-b39393984281)
