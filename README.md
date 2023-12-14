@@ -24,7 +24,9 @@ WHERE address_street_name = 'Northwestern Dr'
 ORDER BY address_number DESC;
 
 --The first witness lives at the last house on "Northwestern Dr".
+
 --The second witness, named Annabel, lives somewhere on "Franklin Ave".
+
 --id = 16371 anabel
 
 ![3 st](https://github.com/Hordiychuk-Radion/SQl-Mystery-Murder/assets/139583782/851e8b19-fd01-4988-81e0-08002c0a76bb)
@@ -33,8 +35,11 @@ The fourth step is to look for information on their reports.
 
 
 -- 2 witnesses.
+
 -- 1st - lives at the last house on "Northwestern Dr". 14887Morty Schapiro
+
 -- 2nd - Annabel, lives somewhere on "Franklin Ave". 16371 Annabel Miller
+
 SELECT *
 FROM person
 WHERE id IN (14887,16371)
@@ -45,7 +50,9 @@ WHERE id IN (14887,16371)
 
 
 -- "Get Fit Now Gym" bag started with "48Z" gold member
+
 -- car with a plate that included "H42W"
+
 -- my gym last week on January the 9th
 
 
@@ -59,7 +66,9 @@ WHERE plate_number Like '%H42W%'
 
 
 -- "Get Fit Now Gym" bag started with "48Z" gold member
+
 -- car with a plate that included "H42W"
+
 -- my gym last week on January the 9th
 
 SELECT p.*, gc.*
@@ -89,7 +98,9 @@ WHERE person_id = 67318
 
 
 -- hired by a woman with a lot of money
+
 -- around 5'5" (65"') or 5'7" (67"'), red hair, drives a Tesla Model s
+
 -- attended the SQL Symphony Concert 3 times in December 2017
 
 select * from drivers_license
@@ -106,23 +117,37 @@ AND gender = 'female'
 
 
 -- hired by a woman with a lot of money
+
 -- around 5'5" (65"') or 5'7" (67"'), red hair, drives a Tesla Model s
+
 -- attended the SQL Symphony Concert 3 times in December 2017
 
 select p.*,fb.* from drivers_license as dl
+
 INNER JOIN person as p ON p.license_id = dl.id
+
 INNER JOIN facebook_event_checkin as fb ON fb.person_id =p.id
+
 WHERE hair_color = 'red'
+
 AND height >=65
+
 AND height <=67
+
 and car_make = 'Tesla'
+
 AND car_model = 'Model S'
+
 AND gender = 'female'
 
 
+
 -- hired by a woman with a lot of money
+
 -- around 5'5" (65"') or 5'7" (67"'), red hair, drives a Tesla Model s
+
 -- attended the SQL Symphony Concert 3 times in December 2017
+
 with CTE as (
 SELECT
 person_id,
