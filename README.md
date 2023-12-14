@@ -22,17 +22,15 @@ WHERE name LIKE 'Annabel%' AND address_street_name  = 'Franklin Ave'
 **The third step is to look for information about the person who lives in the last house on Northwestern Dr.**
 
 
+<code>
 SELECT * FROM person
-
 WHERE address_street_name = 'Northwestern Dr'
-
 ORDER BY address_number DESC;
 
---The first witness lives at the last house on "Northwestern Dr".
-
---The second witness, named Annabel, lives somewhere on "Franklin Ave".
-
---id = 16371 anabel
+-- The first witness lives at the last house on "Northwestern Dr".
+-- The second witness, named Annabel, lives somewhere on "Franklin Ave".
+-- id = 16371 Annabel
+</code>
 
 ![3 st](https://github.com/Hordiychuk-Radion/SQl-Mystery-Murder/assets/139583782/851e8b19-fd01-4988-81e0-08002c0a76bb)
 
