@@ -1,5 +1,6 @@
 # SQl-Mystery-Murder
 **Hello friends, I want to show you the solution to the quest.**
+
 **The first step is to request a crime scene report. Here you will find screenshots of the execution and the necessary code**
 
 select * from crime_scene_report
