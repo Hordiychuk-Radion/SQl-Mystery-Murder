@@ -145,8 +145,9 @@ GROUP BY person_id,
 event_name
 HAVING COUNT (*)
 )
+</code>
 
-
+<code>
 select p.* , fb.* from drivers_license as dl
 INNER JOIN person as p ON p.license_id = dl.id
 INNER JOIN CTE as fb ON fb.person_id =p.id
