@@ -77,7 +77,7 @@ WHERE plate_number Like '%H42W%'
 
 -- my gym last week on January the 9th
 
-SELECT p.*, gc.*
+SELECT p.* , gc.*
 
 FROM drivers_license AS dl
 
@@ -141,7 +141,7 @@ AND gender = 'female'
 
 -- attended the SQL Symphony Concert 3 times in December 2017
 
-select p.*,fb.* from drivers_license as dl
+select p.* ,fb.* from drivers_license as dl
 
 INNER JOIN person as p ON p.license_id = dl.id
 
@@ -158,6 +158,8 @@ and car_make = 'Tesla'
 AND car_model = 'Model S'
 
 AND gender = 'female'
+
+
 
 
 
@@ -189,7 +191,7 @@ HAVING COUNT (*)
 
 
 
-select p.*, fb.* from drivers_license as dl
+select p.* , fb.* from drivers_license as dl
 
 INNER JOIN person as p ON p.license_id = dl.id
 
