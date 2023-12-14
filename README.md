@@ -115,6 +115,7 @@ AND gender = 'female'
 -- around 5'5" (65"') or 5'7" (67"'), red hair, drives a Tesla Model s
 -- attended the SQL Symphony Concert 3 times in December 2017
 
+
  select p.* ,fb.* from drivers_license as dl
  INNER JOIN person as p ON p.license_id = dl.id
  INNER JOIN facebook_event_checkin as fb ON fb.person_id =p.id
@@ -130,6 +131,7 @@ AND gender = 'female'
 -- hired by a woman with a lot of money
 -- around 5'5" (65"') or 5'7" (67"'), red hair, drives a Tesla Model s
 -- attended the SQL Symphony Concert 3 times in December 2017
+
 
  with CTE as (
  SELECT
