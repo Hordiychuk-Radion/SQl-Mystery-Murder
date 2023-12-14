@@ -88,6 +88,7 @@ AND gc.check_in_date = 20180109;
 select * from interview
 WHERE person_id = 67318
 </code>
+
 ![8 step](https://github.com/Hordiychuk-Radion/SQl-Mystery-Murder/assets/139583782/2415beb1-ada3-44f4-8075-7ac5ce3dded5)
 
 **10 step. I take the necessary actions to search for a car and a person by its parameters.**
