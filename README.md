@@ -115,6 +115,7 @@ AND gender = 'female'
 -- around 5'5" (65"') or 5'7" (67"'), red hair, drives a Tesla Model s
 -- attended the SQL Symphony Concert 3 times in December 2017
 
+
 select p.* ,fb.* from drivers_license as dl
 INNER JOIN person as p ON p.license_id = dl.id
 INNER JOIN facebook_event_checkin as fb ON fb.person_id =p.id
@@ -146,7 +147,6 @@ HAVING COUNT (*)
 )
 
 
-
 select p.* , fb.* from drivers_license as dl
 INNER JOIN person as p ON p.license_id = dl.id
 INNER JOIN CTE as fb ON fb.person_id =p.id
@@ -157,6 +157,7 @@ and car_make = 'Tesla'
 AND car_model = 'Model S'
 AND gender = 'female'
 </code>
+
 ![10 step](https://github.com/Hordiychuk-Radion/SQl-Mystery-Murder/assets/139583782/de535e63-b831-4bc5-b56b-8f78ff4c76b7)
 
 ![11 step](https://github.com/Hordiychuk-Radion/SQl-Mystery-Murder/assets/139583782/794844fe-e3a5-4d58-a952-42afd7d3d49a)
